@@ -889,7 +889,7 @@ int pfnRegUserMsg_post(const char *pszName, const int iSize) {
 
    pfnRegUserMsg_common(pszName, msg);
 
-   return msg;
+   RETURN_META_VALUE (MRES_IGNORED, 0);
 }
 
 int pfnRegUserMsg_pre(const char *pszName, const int iSize) {
